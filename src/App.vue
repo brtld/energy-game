@@ -1,18 +1,29 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
+    <general/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 import HelloWorld from './components/HelloWorld.vue'
+import General from './components/General.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    General
+  },
+  computed: mapState([
+    'round',
+    'counter',
+    'weather',
+  ]),
+
 }
 </script>
 
