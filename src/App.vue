@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <general/>
+    <SmartGrid/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -11,12 +12,14 @@ import { mapState } from 'vuex'
 
 import HelloWorld from './components/HelloWorld.vue'
 import General from './components/General.vue'
+import SmartGrid from './components/SmartGrid.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    General
+    General,
+    SmartGrid,
   },
   computed: mapState([
     'round',
