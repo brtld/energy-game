@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <all />
+    <Round />
+    <Upgrades />
   </div>
 </template>
 
 <script>
-import All from './components/All.vue'
+import Upgrades from "./components/Upgrades.vue";
+import Round from "./components/Round.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    All,
-  }
-}
+    Upgrades,
+    Round,
+  },
+};
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
